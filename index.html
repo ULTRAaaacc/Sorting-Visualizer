@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <header>
+        <h1>Sorting Visualizer</h1>
+        <p>Visualize different sorting algorithms in action.</p>
+    </header>
+    
+    <div class="container">
+        <div class="controls">
+            <button id="randomize_array_btn">Randomize Array</button>
+            <button id="sort_btn">Sort</button>
+            <select id="algorithm_select">
+                <option value="bubble">Bubble Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="selection">Selection Sort</option>
+            </select>
+            <label for="speed_range">Speed:</label>
+            <input type="range" id="speed_range" min="1" max="100" value="30">
+        </div>
+        
+        <div class="bars_container" id="bars_container"></div>
+    </div>
+
+    <footer>
+        <p>Created by Hassan Hammoud. <a href="https://github.com/ULTRAaaacc" target="_blank">View on GitHub</a></p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
