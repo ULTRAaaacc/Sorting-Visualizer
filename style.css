@@ -17,12 +17,17 @@ body {
     min-height: 100vh; /* Added min-height property */
   }
   
+  @media screen and (max-width: 768px) {
+    /* Styles for screens less than or equal to 768px wide */
+    .container {
+      flex-direction: column-reverse; /* Reverse container order */
+    }
+    header {
+      margin-bottom: 0; /* Remove margin after header on small screens */
+    }
+  }
+  
 
-header {
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
 
 header h1 {
     font-size: 2.5rem; 
